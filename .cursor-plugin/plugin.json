@@ -1,0 +1,35 @@
+{
+  "name": "coolify",
+  "version": "0.1.0",
+  "description": "Connect Cursor and Grok Bot to your Coolify instance. List apps, servers, deploys, and logs through Coolify's official MCP endpoint.",
+  "author": {
+    "name": "coolLabs"
+  },
+  "homepage": "https://coolify.io",
+  "repository": "https://github.com/coollabsio/coolify-cursor-plugin",
+  "license": "MIT",
+  "keywords": [
+    "coolify",
+    "deploy",
+    "self-hosted",
+    "paas",
+    "mcp",
+    "docker"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "COOLIFY_URL": {
+        "type": "string",
+        "title": "Coolify URL",
+        "description": "Your Coolify instance URL with no trailing slash, e.g. https://coolify.example.com or https://app.coolify.io"
+      },
+      "COOLIFY_TOKEN": {
+        "type": "string",
+        "title": "Coolify API token",
+        "description": "Team-scoped API token from Coolify Keys \u0026 Tokens. MCP must be enabled on the instance."
+      }
+    },
+    "required": ["COOLIFY_URL", "COOLIFY_TOKEN"]
+  }
+}
