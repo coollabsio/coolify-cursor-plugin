@@ -8,6 +8,7 @@
   "homepage": "https://coolify.io",
   "repository": "https://github.com/coollabsio/coolify-cursor-plugin",
   "license": "MIT",
+  "logo": "https://raw.githubusercontent.com/coollabsio/coolify.io/main/public/android-launchericon-512-512.png",
   "keywords": [
     "coolify",
     "deploy",
@@ -27,7 +28,7 @@
       "COOLIFY_TOKEN": {
         "type": "string",
         "title": "Coolify API token",
-        "description": "Team-scoped API token from Coolify Keys \u0026 Tokens. MCP must be enabled on the instance."
+        "description": "Team-scoped API token from Coolify Keys & Tokens. MCP must be enabled on the instance."
       }
     },
     "required": ["COOLIFY_URL", "COOLIFY_TOKEN"]
